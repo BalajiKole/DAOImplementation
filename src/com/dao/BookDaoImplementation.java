@@ -36,6 +36,7 @@ public class BookDaoImplementation implements BooKDao {
 				book.setTitle(resultSet.getString("title"));
 				book.setAuthor(resultSet.getString("author"));
 				book.setPrice(resultSet.getInt("price"));
+			//Book book = new Book(resultSet.getInt("book_id"),resultSet.getString("title"),resultSet.getString("author"),resultSet.getInt("price"));
 				bookList.add(book);
 
 			}
@@ -107,5 +108,6 @@ public class BookDaoImplementation implements BooKDao {
 		// TODO Auto-generated method stub
 		return status;
 	}
-
+	
+	
 }
